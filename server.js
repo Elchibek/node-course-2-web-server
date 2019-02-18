@@ -50,6 +50,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (reg, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
+    });
+});
+
 app.listen(port, () => {
     log(`Server is up on port ${port}`);
 });
